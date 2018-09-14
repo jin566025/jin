@@ -1,0 +1,37 @@
+<!--pages/detail/detail.wxml-->
+<view>
+	<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+	  <block wx:for="{{imgUrls}}">
+		<swiper-item class="swiper-item">
+		  <image src="{{item}}" class="slide-image swiper-img" mode="aspectFit"/>
+		</swiper-item>
+	  </block>
+	</swiper>
+	
+	<view class="content">
+		<view class="title flex flex-align-center">
+			<view class="title-left flex-1">{{ detail.title }}</view>
+			
+			<view class="title-right">
+				<image class="love" src="../../public/img/love-active.png" mode="widthFix"></image>
+				<text class="hot">热度：{{ detail.hot }}</text>
+			</view>
+		</view>
+		<view class="price">$ {{ detail.price }}</view>
+		<view class="desc">{{ detail.content }}</view>
+		<view class="img-content" wx:for="{{ detailImg }}">
+			<image src="{{item}}" mode="widthFix" class="good-img"></image>
+<!-- 			<image src="../../public/img/good2.jpg" mode="widthFix" class="good-img"></image>
+			<image src="../../public/img/good3.jpg" mode="widthFix" class="good-img"></image>
+			<image src="../../public/img/good1.jpg" mode="widthFix" class="good-img"></image> -->
+		</view>
+		
+		<view class="tip">下单、咨询可戳下方二维码</view>
+		<view class="tip">↓↓↓</view>
+		<view class="erweima">
+			<image src="../../public/img/erweima.jpg" class="erweima-img" mode="widthFix"></image>
+		</view>
+		
+	</view>
+	
+</view>

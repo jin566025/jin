@@ -1,0 +1,12 @@
+<template name="footer">
+	<view class="content flex">
+		<view class="nav nav-active flex-1" data-type="1"  bindtap="tab">
+			<image class="icon" src="../../public/img/nav1-active.png" mode="aspectFit"></image>
+			<view class="navs">优惠券</view>
+		</view>
+		<view class="nav  flex-1" data-type="2" bindtap="tab">
+			<image class="icon" src="../../public/img/nav2.png" mode="aspectFit"></image>
+			<view class="navs">海淘</view>
+		</view>
+	</view>
+</template>

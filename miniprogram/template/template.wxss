@@ -1,0 +1,5 @@
+.footer{width: 100%;position: fixed;bottom: 0;height:100rpx;border-top: 1px solid #DCDCDC;}
+	.nav{text-align: center;}
+		.icon{height: 50rpx;width:50rpx;margin-top: 5rpx;}
+		.navs{height:35rpx;line-height:35rpx;font-size: 24rpx;}
+	.nav-active{color: #EBA944;}

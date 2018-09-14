@@ -1,0 +1,46 @@
+/**index.wxss**/
+@import "../../public/css/public.wxss"
+@import "../../template/template.wxss"
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.content{width: 100%;background-color: #efefef;font-family: Roboto;overflow: hidden;}
+.main{padding-top: 10rpx;font-family: Roboto;}
+	.section{width: 98%;margin: 0 auto;height: 240rpx;background-color: #fff;margin-top: 20rpx;position: relative;border-top: 3px dotted #efefef;}
+		.section:before,.section:after{content: " ";display: block;width: 30rpx;height: 30rpx;border-radius: 50%;background-color:#efefef;position: absolute;top: 50%;transform:translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%); }
+		.dot-line{width: 100%;position: absolute;top: 0;height: 2rpx;border-top: 2px dotted  #efefef;}
+		.section:before{left: -15rpx;}
+		.section:after{right: -15rpx;}
+		.section-content{padding: 0 20rpx;height: 100%;}
+			.section-l{width: 190rpx;height:190rpx;}
+			.section-r{width: 100rpx;height:100rpx;}
+			.section-mid{padding: 0 15rpx;}
+				.name{font-size:26rpx;margin-bottom: 10rpx;color: #000000;}
+				.price{font-size: 28rpx;height: 48rpx;line-height: 48rpx;color: dimgray;}
+				.price2{color: #000;font-size: 36rpx;font-weight: bold;}
+				
+.footer-zanwei{height: 120rpx;width: 100%;}
+.footer{width: 100%;position: fixed;bottom: 0;height:100rpx;border-top: 1px solid #DCDCDC;background-color: #fff;font-family: Roboto;}
+	.nav{text-align: center;}
+		.icon{height: 50rpx;width:50rpx;margin-top: 5rpx;}
+		.navs{height:35rpx;line-height:35rpx;font-size: 24rpx;}
+	.nav-active{color: #EBA944;}

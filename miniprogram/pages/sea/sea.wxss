@@ -1,0 +1,27 @@
+@import "../../public/css/public.wxss"
+@import "../../template/template.wxss"
+
+
+.content{height: 100vh;}
+				
+.main{}
+	.main-header{font-size:28rpx;background-color: #FFFFFF;width: 100%;position: fixed;top: 0;}
+	.main-header-zanwei{height: 100rpx;width: 100%;}
+		.main-header-nav{height:90rpx;line-height:90rpx;border-bottom: 2px solid #fff;text-align: center;}
+		.main-header-nav-active{border-bottom: 2px solid #7683F2;color: #7683F2;font-weight: bold;}		
+	.main-content{width: 86%;margin: 0 auto;}	
+		.section{color: #5B5A5F;text-align: center;margin-bottom: 50rpx;}
+			.section-img{width: 400rpx;height: 400rpx;}
+			.section-title{font-size: 30rpx;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;text-align: left;margin: 25rpx 0;}
+			.section-text{font-size: 24rpx;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;text-align: left;}
+			.section-footer{height: 100rpx;}
+				.section-footer-price{font-size: 36rpx;text-align: left;color:#5A5A5E;}
+					.love{width: 30rpx;height: 30rpx;vertical-align: middle;margin-right: 10rpx;}
+					.hot{font-size: 24rpx;color: #D62484;vertical-align: middle;}
+			
+.footer-zanwei{height: 120rpx;width: 100%;}
+.footer{width: 100%;position: fixed;bottom: 0;height:100rpx;border-top: 1px solid #DCDCDC;background-color: #fff;font-family: Roboto;}
+	.nav{text-align: center;}
+		.icon{height: 50rpx;width:50rpx;margin-top: 5rpx;}
+		.navs{height:35rpx;line-height:35rpx;font-size: 24rpx;}
+	.nav-active{color: #EBA944;}/* pages/sea/sea.wxss */

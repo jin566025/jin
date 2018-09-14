@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<!-- <view class="container">
+
+  <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view>
+      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+    </view>
+  </view>
+
+
+
+  <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <text>上传图片</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
+      <text>前端操作数据库</text>
+    </navigator>
+  </view>
+
+
+  <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>快速新建云函数</text>
+    </navigator>
+  </view>
+
+</view> -->
+
+
+<import src="../../template/template.wxml" /> 
+<view class="content">
+	<view class="main">
+		<view class="section" wx:for="{{ goodList }}">
+			<view class="section-content  flex flex-align-center">
+				<image src="{{ item.img }}" mode="widthFix" class="section-l"></image>
+				<view class="section-mid  flex-1">
+					<view class="name over-row2">{{ item.content}}</view>
+					<view class="price">在售价 ￥{{ item.cost_price}}</view>
+					<view class="price">券后价 <text class="price2">￥{{ item.current_price}}</text></view>
+				</view>
+				<image bindtap="getTicket" data-text="{{ item.url }}" src="../../public/img/get.png" class="section-r" mode="widthFix"></image>
+			</view>
+		</view>
+		<!-- <view class="section">
+			<view class="section-content  flex flex-align-center">
+				<image src="../../public/img/good1.jpg" mode="widthFix" class="section-l"></image>
+				<view class="section-mid  flex-1">
+					<view class="name over-row2">热烈牌10包美式球形爆米花教堂奶油味甜零食形爆米花教堂奶油形爆米花教堂奶油</view>
+					<view class="price">在售价 ￥48.80</view>
+					<view class="price">券后价 <text class="price2">￥59.00</text></view>
+				</view>
+				<image bindtap="getTicket" data-text="text" src="../../public/img/get.png" class="section-r" mode="widthFix"></image>
+			</view>
+		</view>
+		<view class="section">
+			<view class="section-content  flex flex-align-center">
+				<image src="../../public/img/good1.jpg" mode="widthFix" class="section-l"></image>
+				<view class="section-mid  flex-1">
+					<view class="name over-row2">热烈牌10包美式球形爆米花教堂奶油味甜零食形爆米花教堂奶油形爆米花教堂奶油</view>
+					<view class="price">在售价 ￥48.80</view>
+					<view class="price">券后价 <text class="price2">￥59.00</text></view>
+				</view>
+				<image bindtap="getTicket" data-text="text" src="../../public/img/get.png" class="section-r" mode="widthFix"></image>
+			</view>
+		</view> -->
+	</view>
+	
+	
+	<view class="footer-zanwei"></view>
+	<view class="footer flex">
+		<navigator class="nav nav-active flex-1"  url = "/pages/index/index" open-type = "redirect">
+			<image class="icon" src="../../public/img/nav1-active.png" mode="aspectFit"></image>
+			<view class="navs">优惠券</view>
+		</navigator>
+		<navigator class="nav flex-1"  url = "/pages/sea/sea" open-type = "redirect">
+			<image class="icon" src="../../public/img/nav2.png" mode="aspectFit"></image>
+			<view class="navs">海淘</view>
+		</navigator>
+
+	</view>
+	
+	
+</view>
